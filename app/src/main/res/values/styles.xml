@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="searchViewStyle">@style/Widget.SearchView</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.Splash">
+        <item name="android:background">@drawable/im_splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="defaultQueryHint">请输入订单号或条码号</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+    </style>
+
+</resources>
