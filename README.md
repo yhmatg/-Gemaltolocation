@@ -1,3 +1,2 @@
-# GemaltoLocation
-
-Gemalto定位查询
+# EsimLocation
+Esim定位查询
