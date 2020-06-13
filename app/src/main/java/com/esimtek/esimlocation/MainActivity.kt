@@ -112,12 +112,12 @@ class MainActivity : BaseActivity() {
                     wait_package_line.text = "待包装：".plus(response.body()?.data?.waitPackaging
                             ?: "0")
 
-                    wait_implantation1.visibility = View.VISIBLE
-                    wait_implantation2.visibility = View.VISIBLE
+                    wait_implantation1.visibility = View.GONE
+                    wait_implantation2.visibility = View.GONE
                     hot_stamping1.visibility = View.VISIBLE
-                    hot_stamping2.visibility = View.VISIBLE
+                    hot_stamping2.visibility = View.GONE
                     implantation1.visibility = View.VISIBLE
-                    implantation2.visibility = View.VISIBLE
+                    implantation2.visibility = View.GONE
                     wait_package_line.visibility = View.VISIBLE
 
                     wait_implantation1.isClickable = false
@@ -165,11 +165,11 @@ class MainActivity : BaseActivity() {
                     wait_package_line.text = "待包装：".plus(waitPackagingList?.size ?: 0)
 
                     implantation1.visibility = if (true == implantation1List?.isNotEmpty()) View.VISIBLE else View.GONE
-                    implantation2.visibility = if (true == implantation2List?.isNotEmpty()) View.VISIBLE else View.GONE
-                    wait_implantation1.visibility = if (true == waitImplantation1List?.isNotEmpty()) View.VISIBLE else View.GONE
-                    wait_implantation2.visibility = if (true == waitImplantation2List?.isNotEmpty()) View.VISIBLE else View.GONE
+                    //implantation2.visibility = if (true == implantation2List?.isNotEmpty()) View.VISIBLE else View.GONE
+                    //wait_implantation1.visibility = if (true == waitImplantation1List?.isNotEmpty()) View.VISIBLE else View.GONE
+                    //wait_implantation2.visibility = if (true == waitImplantation2List?.isNotEmpty()) View.VISIBLE else View.GONE
                     hot_stamping1.visibility = if (true == hotStamping1List?.isNotEmpty()) View.VISIBLE else View.GONE
-                    hot_stamping2.visibility = if (true == hotStamping2List?.isNotEmpty()) View.VISIBLE else View.GONE
+                    //hot_stamping2.visibility = if (true == hotStamping2List?.isNotEmpty()) View.VISIBLE else View.GONE
                     wait_package_line.visibility = if (true == waitPackagingList?.isNotEmpty()) View.VISIBLE else View.GONE
 
                     implantation1.isClickable = true
@@ -245,15 +245,15 @@ class MainActivity : BaseActivity() {
                         }
                         "ImplantationLine2" -> {
                             implantation2.text = "植入2"
-                            implantation2.visibility = View.VISIBLE
+                            implantation2.visibility = View.GONE
                         }
                         "WaitImplantation1" -> {
                             wait_implantation1.text = "待植入1"
-                            wait_implantation1.visibility = View.VISIBLE
+                            wait_implantation1.visibility = View.GONE
                         }
                         "WaitImplantation2" -> {
                             wait_implantation2.text = "待植入2"
-                            wait_implantation2.visibility = View.VISIBLE
+                            wait_implantation2.visibility = View.GONE
                         }
                         "HotstampingLine1" -> {
                             hot_stamping1.text = "烫印1"
@@ -261,7 +261,7 @@ class MainActivity : BaseActivity() {
                         }
                         "HotstampingLine2" -> {
                             hot_stamping2.text = "烫印2"
-                            hot_stamping2.visibility = View.VISIBLE
+                            hot_stamping2.visibility = View.GONE
                         }
                         "WaitPackaging" -> {
                             wait_package_line.text = "待包装"
